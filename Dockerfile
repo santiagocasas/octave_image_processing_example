@@ -9,4 +9,4 @@ RUN apt-get update && \
 
 USER jovyan
 RUN pip install octave_kernel && \
-    export OCTAVE_EXECUTABLE=&(which octave)
+    export OCTAVE_EXECUTABLE=$(which octave)
